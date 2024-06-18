@@ -25,40 +25,38 @@
 
         <nav class="navbar">
             <ul>
-                <li><a href="index.html" onclick="active()" id="display">Home</a></li>
-                <li><a href=".services" onclick="active()" id="display">Services</a></li>
-                <li><a href=".blog" onclick="active()" id="display">Blog</a></li>
-                <li><a href=".about-us" onclick="active()" id="display">About Us</a></li>
-                <li><a href=".contact" onclick="active()" id="display">Contact US</a></li>
-                <li><a href="gallery.html" onclick="active()" id="display">Gallery</a></li>
-                <li><a href="signin&up.html" onclick="active()" id="different">Get started</a></li>
+                <li><a href="index.html" id="display">Home</a></li>
+                <li><a href=".services" id="display">Services</a></li>
+                <li><a href=".blog" id="display">Blog</a></li>
+                <li><a href=".about-us" id="display">About Us</a></li>
+                <li><a href=".contact" id="display">Contact US</a></li>
+                <li><a href="gallery.html" id="display">Gallery</a></li>
+                <li><a href="signin&up.html" id="different">Get started</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="hero" class="index">
-            <div id="hero">
-                <div class="container2">
-                    <div class="info">
-                        <h1>DISCOVER</h1>
-                        <p>World Mission High School is an IT technical school that is located near Kinyinya sector and
-                            it has mission to transform future generations based on technology.</p>
-                        <input type="button" value="Explore more">
-                    </div>
+            <div class="container2">
+                <div class="info">
+                    <h1>DISCOVER</h1>
+                    <p>World Mission High School is an IT technical school that is located near Kinyinya sector and
+                        it has mission to transform future generations based on technology.</p>
+                    <input type="button" value="Explore more">
                 </div>
+            </div>
 
-                <div class="slider">
-                    <img src="imgs/arrow-left-long-solid.svg" id="prev">
-                    <div class="preview">
-                        <img src="imgs/5.jpg" class="active thumbnail">
-                        <img src="imgs/3.jpeg" class="thumbnail">
-                        <img src="imgs/2.jpeg" class="thumbnail">
-                        <img src="imgs/7.jpg" class="thumbnail">
-                        <img src="imgs/4.jpeg" class="thumbnail">
-                    </div>
-                    <img src="imgs/arrow-right-long-solid.svg" id="next">
+            <div class="slider">
+                <img src="imgs/arrow-left-long-solid.svg" id="prev">
+                <div class="preview">
+                    <img src="imgs/5.jpg" class="active thumbnail">
+                    <img src="imgs/3.jpeg" class="thumbnail">
+                    <img src="imgs/2.jpeg" class="thumbnail">
+                    <img src="imgs/7.jpg" class="thumbnail">
+                    <img src="imgs/4.jpeg" class="thumbnail">
                 </div>
+                <img src="imgs/arrow-right-long-solid.svg" id="next">
             </div>
         </section>
 
@@ -69,13 +67,16 @@
                     <div class="service-item">
                         <img src="imgs/undraw_educator_re_ju47.svg" alt="Service 1">
                         <h3>High-Quality Education</h3>
-                        <p>We provide top-notch education that equips students with the necessary skills and knowledge.
+                        <p>
+                            We provide top-notch education that equips students with the necessary skills and knowledge.
                         </p>
                     </div>
                     <div class="service-item">
                         <img src="imgs/undraw_programmer_re_owql.svg" alt="Service 2">
                         <h3>Technical Training</h3>
-                        <p>Our technical training programs are designed to enhance students' practical skills.</p>
+                        <p>
+                            Our technical training programs are designed to enhance students' practical skills.
+                        </p>
                     </div>
                     <div class="service-item">
                         <img src="imgs/1676870405_edugraph-3.jpg" alt="Service 3">
@@ -91,17 +92,19 @@
                 <h1>Our Blog</h1>
                 <div class="blog-posts">
                     <div class="blog-post">
-                        <img src="imgs/blog-post1.jpg" alt="Blog Post Image">
+                        <img src="imgs/3.jpeg" alt="Blog Post Image">
                         <h2>Post Title 1</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero et maximus
-                            commodo.</p>
+                        <p>
+                            We provide top-notch education that equips students with the necessary skills and knowledge.
+                        </p>
                         <a href="#" class="read-more">Read more</a>
                     </div>
                     <div class="blog-post">
-                        <img src="imgs/blog-post2.jpg" alt="Blog Post Image">
+                        <img src="imgs/new/5.jpg" alt="Blog Post Image">
                         <h2>Post Title 2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero et maximus
-                            commodo.</p>
+                        <p>
+                            Our technical training programs are designed to enhance students' practical skills. 
+                        </p>
                         <a href="#" class="read-more">Read more</a>
                     </div>
                 </div>
@@ -178,55 +181,7 @@
         <p>&copy;CopyRight all Right Reserved</p>
     </footer>
 
-    <script>
-        var prev = document.getElementById("prev");
-        var next = document.getElementById("next");
-        var thumbnail = document.getElementsByClassName("thumbnail");
-        var hero = document.getElementById("hero");
-
-        var backgroundImg = new Array(
-            "imgs/5.jpg",
-            "imgs/3.jpeg",
-            "imgs/2.jpeg",
-            "imgs/7.jpg",
-            "imgs/4.jpeg"
-        );
-
-        let i = 0;
-
-        next.onclick = function () {
-            if (i < 4) {
-                hero.style.backgroundImage = 'url("' + backgroundImg[i + 1] + '")';
-                thumbnail[i + 1].classList.add("active");
-                thumbnail[i].classList.remove("active");
-                i++;
-            }
-        }
-
-        prev.onclick = function () {
-            if (i > 0) {
-                hero.style.backgroundImage = 'url("' + backgroundImg[i - 1] + '")';
-                thumbnail[i - 1].classList.add("active");
-                thumbnail[i].classList.remove("active");
-                i--;
-            }
-        }
-
-        document.querySelectorAll('.navbar ul li a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const sectionId = this.getAttribute('href').substring(1);
-                const section = document.getElementById(sectionId);
-
-                if (section) {
-                    section.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
