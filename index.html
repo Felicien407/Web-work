@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Mission High School</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="imgs/logo.png" alt="">
+
+            <div class="text">
+                <h4>WORLD MISSION</h4><br>
+                <p>High School</p>
+            </div>
+
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" onclick="active()" id="display">Home</a></li>
+                <li><a href=".services" onclick="active()" id="display">Services</a></li>
+                <li><a href=".blog" onclick="active()" id="display">Blog</a></li>
+                <li><a href=".about-us" onclick="active()" id="display">About Us</a></li>
+                <li><a href=".contact" onclick="active()" id="display">Contact US</a></li>
+                <li><a href="gallery.html" onclick="active()" id="display">Gallery</a></li>
+                <li><a href="signin&up.html" onclick="active()" id="different">Get started</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="index">
+            <div id="hero">
+                <div class="container2">
+                    <div class="info">
+                        <h1>DISCOVER</h1>
+                        <p>World Mission High School is an IT technical school that is located near Kinyinya sector and
+                            it has mission to transform future generations based on technology.</p>
+                        <input type="button" value="Explore more">
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <img src="imgs/arrow-left-long-solid.svg" id="prev">
+                    <div class="preview">
+                        <img src="imgs/5.jpg" class="active thumbnail">
+                        <img src="imgs/3.jpeg" class="thumbnail">
+                        <img src="imgs/2.jpeg" class="thumbnail">
+                        <img src="imgs/7.jpg" class="thumbnail">
+                        <img src="imgs/4.jpeg" class="thumbnail">
+                    </div>
+                    <img src="imgs/arrow-right-long-solid.svg" id="next">
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="services-container">
+                <h1>SERVICES</h1>
+                <div class="services-content">
+                    <div class="service-item">
+                        <img src="imgs/undraw_educator_re_ju47.svg" alt="Service 1">
+                        <h3>High-Quality Education</h3>
+                        <p>We provide top-notch education that equips students with the necessary skills and knowledge.
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <img src="imgs/undraw_programmer_re_owql.svg" alt="Service 2">
+                        <h3>Technical Training</h3>
+                        <p>Our technical training programs are designed to enhance students' practical skills.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="imgs/1676870405_edugraph-3.jpg" alt="Service 3">
+                        <h3>Extracurricular Activities</h3>
+                        <p>We offer a variety of extracurricular activities to foster students' overall development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog">
+            <div class="container">
+                <h1>Our Blog</h1>
+                <div class="blog-posts">
+                    <div class="blog-post">
+                        <img src="imgs/blog-post1.jpg" alt="Blog Post Image">
+                        <h2>Post Title 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero et maximus
+                            commodo.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                    <div class="blog-post">
+                        <img src="imgs/blog-post2.jpg" alt="Blog Post Image">
+                        <h2>Post Title 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero et maximus
+                            commodo.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about-us" class="about-us">
+            <h1>ABOUT US</h1>
+            <div class="about-container">
+                <div class="about-item">
+                    <i class="fa fa-book"></i>
+                    <h3>MISSION</h3>
+                    <hr>
+                    <p>
+                        To lift standards of living of Rwandans by offering quality education to young people and
+                        looking forward to seeing vulnerable students acquire education for a better future.
+                    </p>
+                </div>
+
+                <div class="about-item">
+                    <i class="fa fa-globe"></i>
+                    <h3>VISION</h3>
+                    <hr>
+                    <p>
+                        To be a model technical education center of excellence contributing to the scientific and
+                        technological development of Rwanda and the region.
+                    </p>
+                </div>
+
+                <div class="about-item">
+                    <i class="fa fa-pencil"></i>
+                    <h3>ACHIEVEMENT</h3>
+                    <hr>
+                    <p>
+                        Success means different things to different people. But no matter what Our Students Succeed in
+                        Nation examination. we’re here for you every step of the way.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <h2>Get in Touch</h2>
+                        <p>Address: Kinyinya,Gasabo,Rwanda</p>
+                        <p>Email: worldmission779@gmai.com</p>
+                        <p>Phone: +250 785 623 245 / 788 411 064</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h2>Send Us a Message</h2>
+                        <form>
+                            <input type="text" name="name" placeholder="Your Name">
+                            <input type="email" name="email" placeholder="Your Email">
+                            <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy;CopyRight all Right Reserved</p>
+    </footer>
+
+    <script>
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        var thumbnail = document.getElementsByClassName("thumbnail");
+        var hero = document.getElementById("hero");
+
+        var backgroundImg = new Array(
+            "imgs/5.jpg",
+            "imgs/3.jpeg",
+            "imgs/2.jpeg",
+            "imgs/7.jpg",
+            "imgs/4.jpeg"
+        );
+
+        let i = 0;
+
+        next.onclick = function () {
+            if (i < 4) {
+                hero.style.backgroundImage = 'url("' + backgroundImg[i + 1] + '")';
+                thumbnail[i + 1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i++;
+            }
+        }
+
+        prev.onclick = function () {
+            if (i > 0) {
+                hero.style.backgroundImage = 'url("' + backgroundImg[i - 1] + '")';
+                thumbnail[i - 1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i--;
+            }
+        }
+
+        document.querySelectorAll('.navbar ul li a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const sectionId = this.getAttribute('href').substring(1);
+                const section = document.getElementById(sectionId);
+
+                if (section) {
+                    section.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

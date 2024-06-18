@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Gallery</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            user-select: none;
+        }
+
+        :root {
+            --color: rgb(17, 90, 173);
+            --backcolor: #24a0e2;
+        }
+
+        body {
+            background: white;
+            color: var(--color);
+        }
+
+        .logo {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            left: 2%;
+            position: relative;
+            display: flex;
+            padding: 13px;
+            border-radius: 10px;
+            box-shadow: 0px 1px 3px rgb(17, 90, 173);
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .text {
+            margin-left: 10px;
+            font-size: 18.5px;
+            margin: 0 0 10px 10px;
+            letter-spacing: -1px;
+            text-shadow: 0px 1px 3px rgb(17, 90, 173);
+            color: #fff;
+        }
+
+        h4 {
+            margin-top: 4px;
+        }
+
+        p {
+            margin-top: -15px;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+            transition: transform 0.3s ease;
+            background: none;
+            top: 3%;
+        }
+
+        nav {
+            margin-left: 10%;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 15px;
+            margin-top: 30px;
+        }
+
+        .navbar ul li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 22px;
+            border-radius: 15px;
+            padding: 12px 18px;
+        }
+
+        header {
+            position: relative;
+            height: 13vh;
+            margin-top: 0%;
+            display: flex;
+            box-shadow: 2px 20px 40px #e3e0e0;
+        }
+
+        #different {
+            background-color: rgb(17, 90, 173);
+            color: #fff;
+        }
+
+        #different:hover {
+            background-color: white;
+            color: rgb(17, 90, 173);
+            box-shadow: 0px 1px 3px rgb(17, 90, 173);
+        }
+
+        .navbar a:hover {
+            background-color: white;
+            color: rgb(17, 90, 173);
+            box-shadow: 0px 1px 3px rgb(17, 90, 173);
+        }
+
+        footer {
+            background-color: rgb(17, 90, 173);
+            padding: 25px 30px;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-family: 'Finger Paint', cursive;
+        }
+
+        h2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 80px auto;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .Image {
+            width: 22%;
+            height: 11rem;
+            margin: 5px 5px;
+        }
+
+        .images {
+            animation: fadeIn 0.5s ease-in-out;
+            margin-left: 50px;
+            letter-spacing: 15px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="imgs/logo.png" alt="">
+
+            <div class="text">
+                <h4>WORLD MISSION</h4><br>
+                <p>High School</p>
+            </div>
+
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" onclick="active()" id="display">Home</a></li>
+                <li><a href="services.html" onclick="active()" id="display">Services</a></li>
+                <li><a href="blog.html" onclick="active()" id="display">Blog</a></li>
+                <li><a href="about.html" onclick="active()" id="display">About Us</a></li>
+                <li><a href="contact.html" onclick="active()" id="display">Contact US</a></li>
+                <li><a href="gallery.html" onclick="active()" id="display">Gallery</a></li>
+                <li><a href="signin&up.html" onclick="active()" id="different">Get started</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Our Gallery Images</h2>
+        <div class="images">
+            <img src="imgs/2.jpeg" class="Image">
+            <img src="imgs/3.jpeg" class="Image">
+            <img src="imgs/4.jpeg" class="Image">
+            <img src="imgs/5.jpg" class="Image">
+            <img src="imgs/6.jpg" class="Image">
+            <img src="imgs/7.jpg" class="Image">
+            <img src="imgs/8.jpg" class="Image">
+            <img src="imgs/9.jpg" class="Image">
+            <img src="imgs/new/5.jpg" class="Image">
+            <img src="imgs/new/4.jpg" class="Image">
+            <img src="imgs/new/28.jpg" class="Image">
+            <img src="imgs/1.jpg" class="Image">
+        </div><br>
+    </main>
+    <footer>
+        <p>&copy;CopyRight all Right Reserved</p>
+    </footer>
+
+    <script>
+        function active() {
+            var display = document.getElementById("display");
+            display.style.color = '#fff';
+            display.style.box - shadow ='0px 2px 5px rgb(2, 32, 66)';
+        }
+    </script>
+</body>
+
+</html>
