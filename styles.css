@@ -9,17 +9,13 @@
 
 :root {
     --color: rgb(17, 90, 173);
-    --backcolor: #24a0e2;
     --bg-color: #323946;
     --second-bg-color: #182527;
-    --text-color: #fff;
     --main-color: #0ef;
-    --other-color: black;
 }
 
 body {
     background: white;
-    font-family: 'Poppins', sans-serif;
 }
 
 .logo {
@@ -61,7 +57,7 @@ p {
 }
 
 nav {
-    margin-left: 4%;
+    margin-left: 10%;
 }
 
 .navbar ul {
@@ -70,7 +66,7 @@ nav {
 }
 
 .navbar ul li {
-    margin: 12px;
+    margin: 15px;
     margin-top: 30px;
 }
 
@@ -415,12 +411,14 @@ footer {
     gap: 50px;
 }
 
-.contact-details, .contact-form {
+.contact-details,
+.contact-form {
     max-width: 45%;
     text-align: left;
 }
 
-.contact-details h2, .contact-form h2 {
+.contact-details h2,
+.contact-form h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
@@ -451,7 +449,8 @@ footer {
     gap: 15px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
@@ -485,7 +484,8 @@ footer {
         align-items: center;
     }
 
-    .contact-details, .contact-form {
+    .contact-details,
+    .contact-form {
         width: 100%;
         max-width: 100%;
         margin-bottom: 30px;
